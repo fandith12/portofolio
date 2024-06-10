@@ -1,0 +1,171 @@
+body {
+	margin:auto;
+	font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+header {
+	height:70px;
+    padding: auto;
+    background-color: black;
+	border-radius: 2pc;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+header h1 {
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	color: wheat;
+}
+header h1 a {
+	transition: .3s;
+    
+}
+header ul {
+	float: right;
+	margin: auto;
+}
+header ul li {
+	padding: 24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .3s;
+}
+header ul li a:hover {
+	color: #F84744;
+}
+a {
+	text-decoration: none;
+    color: wheat;
+	margin: auto;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px
+	
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgba(16, 47, 80, .9);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul{
+	list-style: none;
+}
+.sidebar ul :hover {
+color: #F84744;
+}
+.sidebar ul li a {
+	color: #fff;
+
+}
+
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.nav i {
+	color: white;
+}
+
+section {
+	padding: 120px 0 50px 0;
+	background-color: white;
+}
+.main {
+	display: flex;
+}
+
+.banner_left {
+	margin: 0 30px;
+	box-sizing: border-box;
+	width: 50%
+	
+}
+.banner_left img {
+	width: 200px;
+}
+
+.banner h2 {
+	text-transform: uppercase;
+	color: black;
+
+}
+
+.banner p {
+	font-size: 30px;
+	color: black;
+}
+.banner_right {
+	box-sizing: border-box;
+	text-align: center;
+	width: 50%;
+	margin: auto 0;
+}
+.banner_right img{
+	width: 350px;
+}
+footer {
+	background-color: black;
+	padding: 25px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+
+	@media (max-width: 768px){
+		.mobile-menu {
+			display: block;
+		}
+		header ul {
+			display: none;
+		}
+		.banner .main {
+			align-items: center;
+		}
+		.banner_left {
+			width: 100%;
+		}
+		.banner_left img {
+			width: 100%;
+			align-items: center;
+		}
+		.banner_right {
+			display: none;
+		}
+		.banner_right img {
+			display: none;
+		}
+		.banner h2	{
+			font-size: 18px;
+		}
+		.banner p {
+			width: 100%;
+			text-align: center;
+			font-size: 100%;
+		}
+		footer {
+			padding: 23px;
+		}
+	}
