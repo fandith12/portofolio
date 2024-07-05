@@ -1,5 +1,4 @@
 body {
-	margin:auto;
 	font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
 	
 }
@@ -121,10 +120,13 @@ section h3::after {
 .container {
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	padding: 50px 0;
+	width: 60%;
+	margin: auto;
 }
 .info {
-	box-sizing: border-box;
+	width: 30%;
 }
 .info-items {
 	display: flex;
@@ -135,24 +137,26 @@ section h3::after {
 	padding-right: 30px;
 }
 .contact-form {
-	box-sizing: border-box;
+	width: 70%;
+	text-align: right;
 }
-.form-grup input {
+.form-grup{
+	margin: 10px;
+}
+input {
 	border-radius: 10px;
-	margin: 5px;
-	padding-right: 50px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	width: 40%;
+	height: 40px;
 }
 .form-grup textarea {
 	border-radius: 10px;
-	margin: 5px;
-	width: 300px;
-	padding-bottom: 150px;  
+	width: 80%;
+	height: 150px;
 }
 .contact-form button {
 	border-radius: 10px;
 	margin: 5px;
+	padding: 10px 25px;
 }
 footer {
 	background-color: black;
@@ -172,7 +176,24 @@ footer small {
 		}
 		.container {
 			flex-direction: column;
-			margin: 0 10px;
+			width: 90%;
+		}
+		.info {
+			width: 90%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon {
+			padding-left: 10%;
+		}
+		.info-items{
+			margin: auto;
+			flex-direction: column;
+		}
+		.contact-form {
+			width: 90%;
+			text-align: center;
+			margin: auto;
 		}
 		textarea {
 			margin: 0 auto;
