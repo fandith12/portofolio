@@ -65,17 +65,21 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/xkgwnqnr" method="POST">
                     <div class="form-grup">
                         <input
                             type="text"
                             placeholder="Nama Lengkap"
                             required
+                            id="nama-lengkap"
+                            name="nama-lengkap"
                         />
                         <input
                             type="email"
                             placeholder="Email"
                             required
+                            name="email"
+                            id="email"
                         />
                     </div>
                     <div class="form-grup">
@@ -83,17 +87,23 @@
                             type="tel"
                             placeholder="No HP"
                             required
+                            name="no-hp"
+                            id="no-hp"
                         />
                         <input
                             type="text"
                             placeholder="Alamat"
                             required
+                            name="alamat"
+                            id="alamat"
                         />
                     </div>
                     <div class="form-grup">
                         <textarea
                             placeholder="Pesan"
                             required
+                            name="message"
+                            id="message"
                         ></textarea>
                     </div>
                     <button type="submit">kirim</button>
