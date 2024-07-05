@@ -120,18 +120,30 @@ section h3::after {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
+	width: 90%;
+	margin: auto;
 }
 .project {
-	box-sizing: border-box;
+	width: 25%;
 	padding:5px;
 	text-align: center;
-	margin-bottom: 15px;
+	align-content: center;
+	align-items: center;
+	margin: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: wheat;
+	border: none;
+	padding: 10px 0;
+}
+.project:hover{
+	transform: scale(1.2);
+}
+img {
+	width: 90%;
 }
 .project div a {
 	color: black;
-}
-.project :hover {
-	transform: scale(1.2);
 }
 footer {
 	background-color: black;
@@ -154,6 +166,7 @@ footer small {
 			display: block;
 		}
 		.project {
-			width: 100%;
+			width: 90%;
+			margin: 30px auto;
 		}
 	}
