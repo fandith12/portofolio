@@ -127,10 +127,10 @@ section h3::after {
 }
 .info {
 	width: 30%;
+	border: 1px solid black;
 }
 .info-items {
 	display: flex;
-	width: 20pc;
 	align-items: center;
 }
 .info-items .icon {
